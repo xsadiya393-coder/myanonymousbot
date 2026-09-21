@@ -72,8 +72,8 @@ export default function Home() {
     if (!form.name.trim()) return "Name is required.";
     if (!form.number1.trim()) return "Number 1 is required.";
     if (!form.number2.trim()) return "Number 2 is required.";
-    if (!/^\\S+@\\S+\\.\\S+$/.test(form.gmail1)) return "A valid Gmail 1 address is required.";
-    if (!/^\\S+@\\S+\\.\\S+$/.test(form.gmail2)) return "A valid Gmail 2 address is required.";
+    if (!form.gmail1.includes("@")) return "A valid Gmail 1 address is required.";
+if (!form.gmail2.includes("@")) return "A valid Gmail 2 address is required.";
     if (!form.accepted) return "You must accept the rules.";
     if (totalSize > 40 * 1024 * 1024) return "Total upload size must be 40 MB or less.";
     return "";
