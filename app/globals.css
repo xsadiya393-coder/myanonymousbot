@@ -137,3 +137,5 @@ input:focus, textarea:focus { border-color: var(--accent); }
   gap: 10px;
 }
 .checkbox input { width: auto; margin-top: 3px; }
+
+.languageBar{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-bottom:18px;color:var(--muted);font-size:14px}.languageBar select{width:auto;min-width:120px;padding:9px 12px;border-radius:10px;background:#0b0e14;color:var(--text);border:1px solid var(--line)}[dir="rtl"] .languageBar{justify-content:flex-start}
